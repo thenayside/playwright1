@@ -10,6 +10,7 @@ test('context play wright test',async ({browser})=>
    await page.locator('[placeholder="Your password"]').fill("qwert@123");
    await page.locator("#js_login").click();
    await expect(page.locator('[id="username-error"]')).toContainText('These credentials');
+   console.log("vichu")
 });
 
 
